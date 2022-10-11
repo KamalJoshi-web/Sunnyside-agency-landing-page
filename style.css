@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,500&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@500;700&family=Overpass:wght@400;700&family=Space+Grotesk:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@500;700&family=Overpass:wght@400;700&family=Space+Grotesk:wght@300;400;500&display=swap');
+
+
+/* font-family: 'Barlow', sans-serif; */
+/* font-family: 'Fraunces', serif; */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+
+/* Header and NavBar styling */
+header{
+    background-image: url(./images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 92vh;
+    text-align: center;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0rem 3rem;
+    padding: 1rem 0rem;
+
+   
+}
+.brand-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+#contact{
+    width: 6rem;
+    height: 2rem;
+    padding: 1rem -1rem;
+    border: none;
+    border-radius: 1rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(212, 27%, 19%);
+    font-size: .7rem;
+}
+#contact:hover{
+    background-color: transparent;
+    color:hsl(0, 0%, 100%) ;
+    border: 1px solid hsl(0, 0%, 100%) ;
+    
+}
+.navigation-links{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.navigation-links > a{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Barlow', sans-serif;;
+}
+.creative{
+    font-size: 2rem;
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: .5rem;
+    margin-top: 3rem;
+}
+#down-arrow{
+    margin-top: 3rem;
+    height: 5rem;
+}
+#hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+/* Main section styling  */
+h3{
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 1rem;
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+}
+
+p{
+    margin-bottom: 1rem;
+    font-size: 0.76rem;
+    font-weight: 500;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+}
+button{
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+picture > img{
+    width: 50vw;
+}
+/* .grid-container{
+    display: grid;
+} */
+
+
+
+
+/* Section one egg container styling */
+#egg-container{
+    display: grid;
+    grid-template-areas: 
+    'text image';
+    margin-top: 0;
+}
+.text-for-egg{
+    grid-area: text;
+    align-self: center;
+    /* text-align: center; */
+    width: 50%;
+    margin: auto;
+}
+
+.text-for-egg > button{
+     box-shadow: 5px 3px 5px 2px hsl(51, 100%, 49%);    
+}
+.image-for-egg{
+    grid-area: image;
+}
+
+
+
+/* Section two glass container styling */
+#glass-container{
+    display: grid;
+    grid-template-areas: 
+    'image text';
+    margin-top: -3px;
+}
+
+.image-for-glass{
+    grid-area: image;
+}
+.text-for-glass{
+    grid-area: text;
+    align-self: center;
+    /* text-align: center; */
+    width: 50%;
+    margin: auto;
+}
+.text-for-glass > button{
+    box-shadow: 5px 3px 5px 2px hsl(7, 99%, 70%);
+}
+
+/* Section three cherry-orange-container styling */
+#cherry-orange-container{
+    display: grid;
+    grid-template-areas: 'cherry oranges';
+   
+    margin-top: -4px;
+    overflow: hidden;
+}
+.cherry-container{
+    grid-area: cherry;
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100% 100%;
+    height: 60vh;
+    width: 50vw;
+    color: hsl(167, 40%, 24%);
+}
+.cherry-container > .content> p{
+    color: hsl(167, 40%, 24%);
+   
+}
+
+.orange-container{
+    grid-area: oranges;
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100% 100%;
+    height: 60vh;
+    width: 50vw;
+    color: hsl(198, 62%, 26%);
+}
+.orange-container > .content > p{
+    color: hsl(198, 62%, 26%);
+}
+
+.content{
+    position: relative;
+    top: 58%;
+    padding: 0rem 8rem;
+}
+.content > h3{
+    font-size: 1.28rem;
+}
+
+
+/* Section four testimonial-container styling */
+    .user-profiles{
+        border-radius: 50%;
+    width: 6rem;
+    margin: 2rem 0rem;
+    }
+    .testimonial-info{
+        padding: 1rem 3.5rem;
+   
+    color: hsl(213, 9%, 39%);
+    font-weight: 5401;
+   
+    font-size: 1.2rem;
+    font-family: 'Barlow', sans-serif;
+    }
+    .names{
+        font-weight: 900;
+        font-family: 'Fraunces', serif;
+        color: hsl(212, 27%, 19%);
+    }
+    .job-title{
+        font-weight: 400;
+    font-family: 'Barlow', sans-serif;
+    color: hsl(210, 4%, 67%);
+    font-size: .8rem;
+    margin-top: 1rem;
+    }
+
+
+    #testimonial-container{
+        display: grid;
+    grid-template-areas:
+        'title title title'
+        'profile1 profile2 profile3';
+    text-align: center;
+    }
+    .title{
+        grid-area: title;
+        margin-top: 1rem;
+        /* font-size: 2rem;
+        font-weight: 700; */
+        font-family: 'Fraunces', serif;
+        letter-spacing: .3rem;
+        color: hsl(210, 4%, 67%);
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    .profile1{
+        grid-area: profile1;
+    }
+    .profile2{
+        grid-area: profile2;
+    }
+    .profile3{
+        grid-area: profile3;
+    }
+
+/* Section five image container */
+#images-container > div > picture >img{
+    width: 100%;
+}
+#images-container{
+    display: grid;
+    grid-template-areas: 'bottle ora cone cubes';
+    margin-top: 2rem;
+
+ }
+ .image1{
+    grid-area: bottle;
+ }
+ .image2{
+    grid-area:ora ;
+ }
+ .image3{
+    grid-area:cone ;
+ }
+ .image4{
+    grid-area: cubes;
+ }
+/* footer styling */
+#foot{
+    text-align: center;
+    height: 17rem;
+    background-color: #91d3c5;
+    margin-top: -4px;
+}
+.head-footer{
+    padding: 2rem 1rem;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+    /* color: hsl(168, 34%, 41%); */
+    color: hsl(167, 40%, 24%);
+}
+.links-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.links-footer > a{
+    font-family: 'Barlow', sans-serif;
+    color: hsl(168, 34%, 41%);
+}
+.links-footer > a:hover{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.social-medias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.social-medias > img:hover{
+    background: hsl(0, 0%, 100%);
+    
+    cursor: pointer;
+}
+@media screen and (max-width:912px) {
+    header{
+        height: 50vh;
+    }
+    .content{
+        padding: 0rem 7rem;
+    }
+    .testimonial-info{
+        padding: 1rem 0.1rem;
+    }
+    .cherry-container{
+        height: 35vh;
+    }
+    .orange-container{
+        height: 35vh;
+    }
+}
+@media screen and (max-width:750px) {
+   /* header and NavBar Styling for small sizes */
+    header{
+        background-image: url(./images/mobile/image-header.jpg);
+        height: 60vh;
+    }
+    .navigation-links{
+        display: none;
+        
+    }
+    
+    .navigation-links > a{
+        color: hsl(210, 4%, 67%);
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+       
+        right: 13%;
+        background-color: hsl(0, 0%, 100%);
+        
+        padding: 2rem 3rem;
+        width: 15rem;
+    }
+    #contact{
+        background-color:hsl(51, 100%, 49%) ;
+        height: 2.4rem;
+    }
+    #hamburger{
+        display: block;
+    }
+    #triangle-bottomright{
+        width: 0;
+        height: 0px;
+        border-bottom: 45px solid hsl(0, 0%, 100%);
+        border-left: 45px solid transparent;
+        display: none;
+        position: absolute;
+        top: 7%;
+        right: 13%;
+    }
+
+    /* pre-style for sectrions  */
+    picture > img{
+        width: 100vw;
+    }
+
+    .content{
+        padding: 0rem 3rem;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    .content > h3{
+        font-size: 2rem;
+    }
+
+
+    /* Section 1 for mobile sizes */
+
+    #egg-container{
+        grid-template-areas: 'image'
+        'text';
+    }
+
+    .text-for-egg{
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+
+    /* Section 2 for mobile sizes */
+    #glass-container{
+        grid-template-areas: 'image'
+        'text';
+    }
+    .text-for-glass{
+        grid-area: text;
+         text-align: center;
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+
+    /* Section 3 for mobile sizes */
+    #cherry-orange-container{
+        grid-template-areas: 'cherry'
+        'oranges';
+    }
+    .cherry-container{
+        width: 100vw;
+        height: 50vh;
+    }
+    .orange-container{
+        width: 100vw;
+        height: 50vh;
+        margin-top: -1px;
+    }
+    /* Section 4 for mobile sizes */
+    #testimonial-container{
+        grid-template-areas: 'title'
+        'profile1'
+        'profile2'
+        'profile3';
+    }
+    /* Section 5 for mobile sizes */
+    #images-container{
+        grid-template-areas: 'bottle ora'
+        'cone cubes';
+    }
+    #images-container > div > picture >img{
+        margin-top: -4px;
+    }
+
+}
+@media screen and (max-width:280px) {
+    .active{
+        width: 13rem;
+        right: 17%;
+    }
+    #triangle-bottomright{
+        right: 17%;
+    }
+    header{
+        height: 73vh;
+    }
+    .content{
+        padding: 0rem 1rem;
+    }
+}
